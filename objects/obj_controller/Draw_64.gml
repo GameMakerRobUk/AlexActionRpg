@@ -4,7 +4,7 @@ if (state == e_mainMenu_state.mainMenu or state == e_mainMenu_state.title){
 	#region TITLE SCREEN
 	//global.keys[e_keys.l][0]
 	//Draw background
-	if(state == e_mainMenu_state.title or room == room_titleScreen){
+	if(state == e_mainMenu_state.title or room == room_title_screen){
 		draw_sprite(spr_title_screen_no_options, 0, 0, 0);
 		draw_sprite(spr_testRoom, 0, sprite_get_width(spr_testRoom), sprite_get_height(spr_testRoom));
 		var mouseOver = scr_mouse_over_sprite_gui(spr_testRoom, sprite_get_width(spr_testRoom), sprite_get_height(spr_testRoom));
@@ -63,7 +63,7 @@ if (state == e_mainMenu_state.mainMenu or state == e_mainMenu_state.title){
 }
 if(state == e_mainMenu_state.settings){
 	#region settings
-	if(room == room_titleScreen){
+	if(room == room_title_screen){
 		draw_sprite(spr_title_screen_no_options, 0, 0, 0);
 	}
 	//show_debug_message("settings is running")

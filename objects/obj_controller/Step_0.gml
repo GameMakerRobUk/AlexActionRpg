@@ -12,7 +12,7 @@ if (keyboard_check_pressed(vk_escape)){
 		if(settingsState == e_settings.last){ //no settings chosen right now / not on the settings menu in which case it would equal something else
 			//player in main menu
 			if(state == e_mainMenu_state.title or state == e_mainMenu_state.mainMenu){	
-				if(room != room_titleScreen){
+				if(room != room_title_screen){
 					state = e_mainMenu_state.playing;
 				} 
 				else{
@@ -22,7 +22,7 @@ if (keyboard_check_pressed(vk_escape)){
 			}
 			else{
 				//back to main menu
-				if(room == room_titleScreen){
+				if(room == room_title_screen){
 					state = e_mainMenu_state.title;
 				}
 				else{
@@ -56,8 +56,8 @@ if(sound != currentSound){ //stores -1 or a song for purpose of comparing with w
 #endregion changong songs
 
 #region INVENTORY
-
-if(keyboard_check_pressed(ord("I")) and (room != room_titleScreen)){
+/*
+if(keyboard_check_pressed(ord("I")) and (room != room_title_screen)){
 	if(state != e_mainMenu_state.inventory){
 		state = e_mainMenu_state.inventory
 		selectedInventorySection = e_inventorySection.generalInventory;
@@ -208,7 +208,7 @@ if(state == e_mainMenu_state.inventory){
 		}
 	}
 }
-
+*/
 #endregion INVENTORY
 
 /*if(keyboard_check(vk_enter) and room == room_titleScreen){
