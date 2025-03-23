@@ -1,7 +1,14 @@
-var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+left = keyboard_check( global.keys[e_keys.l][0] ) || keyboard_check( global.keys[e_keys.l][1] );
+right = keyboard_check( global.keys[e_keys.r][0] )|| keyboard_check( global.keys[e_keys.r][1] );
+up = keyboard_check( global.keys[e_keys.u][0] ) || keyboard_check( global.keys[e_keys.u][1] );
+down = keyboard_check( global.keys[e_keys.d][0] )|| keyboard_check( global.keys[e_keys.d][1] );
+//left_pressed = keyboard_check_pressed( global.keys[e_keys.l][0] ) || keyboard_check_pressed( global.keys[e_keys.l][1] );
+//right_pressed = keyboard_check_pressed( global.keys[e_keys.r][0] )|| keyboard_check_pressed( global.keys[e_keys.r][1] );
 
-if (keyboard_check(vk_shift) && stamina.current > 0){
+var _hor = right - left;
+var _ver = down - up;
+
+if (keyboard_check( global.keys[e_keys.run][0]) && stamina.current > 0){
 	move_speed = RUN_SPEED;	
 	use_stamina(stamina.run_cost);
 }else{
@@ -27,7 +34,7 @@ else
     else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
 }
 
-if (keyboard_check_pressed(vk_space)) 
+if (keyboard_check_pressed( global.keys[e_keys.jump][0] )) 
 {
 	if (stamina.current >= stamina.swing_cost){
 		use_stamina(stamina.swing_cost);
