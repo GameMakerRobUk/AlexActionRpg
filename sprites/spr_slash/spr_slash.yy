@@ -25,7 +25,7 @@
   ],
   "name":"spr_slash",
   "nineSlice":null,
-  "origin":9,
+  "origin":3,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -83,7 +83,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":-9,
+    "xorigin":0,
     "yorigin":12,
   },
   "swatchColours":null,

@@ -22,3 +22,27 @@ stamina = {
 }
 
 mask_index = spr_player_mask;
+
+
+get_facing_coords = function(){
+	/*
+		return x/y based on facing
+		0 : right
+		90 : up
+		180 : left
+		270 : down
+	*/
+	
+	if (facing == 0){
+		return ({x : (x + sprite_width/2), y : y - (sprite_height / 2)});
+	}
+	if (facing == 180){
+		return ({x : (x - sprite_width/2), y : y - (sprite_height / 2)});
+	}
+	if (facing == 90){
+		return ({x : x, y : y - (sprite_height / 2)});
+	}
+	if (facing == 270){
+		return ({x : x, y : y});
+	}
+}

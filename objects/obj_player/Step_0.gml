@@ -15,7 +15,7 @@ if (keyboard_check( global.keys[e_keys.run][0]) && stamina.current > 0){
 	move_speed = WALK_SPEED;
 }
 
-move_and_collide(_hor * move_speed, _ver * move_speed, tilemap, undefined, undefined, undefined, move_speed, move_speed);
+move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, parCollision], undefined, undefined, undefined, move_speed, move_speed);
 
 if (_hor != 0 or _ver != 0) 
 {
@@ -24,7 +24,7 @@ if (_hor != 0 or _ver != 0)
     else if (_hor > 0) sprite_index = spr_player_walk_right;
     else if (_hor < 0) sprite_index = spr_player_walk_left;
         
-    facing = point_direction(0, 0, _hor, _ver);
+    facing = point_direction(0, 0, _hor, _ver);// show_debug_message("facing: " + string(facing))
 }
 else 
 { 
@@ -38,7 +38,9 @@ if (keyboard_check_pressed( global.keys[e_keys.jump][0] ))
 {
 	if (stamina.current >= stamina.swing_cost){
 		use_stamina(stamina.swing_cost);
-	    var _inst = instance_create_depth(x, y, depth, obj_attack);
+		//var _inst = instance_create_depth(x, y, depth, obj_attack);
+		var _coords = get_facing_coords();
+		var _inst = instance_create_depth(_coords.x, _coords.y, depth, obj_attack);
 	    _inst.image_angle = facing;
 	    _inst.damage *= damage;   
 	}
@@ -52,3 +54,5 @@ if (stamina.time_before_regen_allowed == 0){
 if (stamina.can_regenerate){
 	add_stamina(stamina.regen_rate);
 }
+
+depth = -y;

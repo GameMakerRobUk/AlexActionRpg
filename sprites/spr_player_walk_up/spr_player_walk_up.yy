@@ -26,7 +26,7 @@
   ],
   "name":"spr_player_walk_up",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":8,
-    "yorigin":10,
+    "yorigin":20,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
