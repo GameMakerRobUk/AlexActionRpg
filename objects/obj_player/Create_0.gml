@@ -45,4 +45,7 @@ get_facing_coords = function(){
 	if (facing == 270){
 		return ({x : x, y : y});
 	}
+	
+	show_debug_message("get_facing_coords, not facing up down left or right")
+	return ({x : x, y : y});
 }

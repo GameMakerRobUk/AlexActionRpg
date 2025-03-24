@@ -8,3 +8,5 @@ tilemap = layer_tilemap_get_id("Tiles_col");
 //knockback
 kb_x = 0;
 kb_y = 0;
+
+i_died = instance_destroy;

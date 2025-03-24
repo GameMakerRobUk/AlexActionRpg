@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tree",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_fallen_tree",
+  "eventList":[],
   "managed":true,
-  "name":"obj_tree",
+  "name":"obj_fallen_tree",
   "overriddenProperties":[],
   "parent":{
-    "name":"Destructible Objects",
-    "path":"folders/Objects/Destructible Objects.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"parDestructible",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tree",
-    "path":"sprites/spr_tree/spr_tree.yy",
+    "name":"spr_fallen_tree",
+    "path":"sprites/spr_fallen_tree/spr_fallen_tree.yy",
   },
   "spriteMaskId":null,
   "visible":true,
