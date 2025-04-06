@@ -3,8 +3,8 @@
   "%Name":"README",
   "name":"README",
   "parent":{
-    "name":"RPG Starter tutorial",
-    "path":"RPG Starter tutorial.yyp",
+    "name":"actionRPGproject2025",
+    "path":"actionRPGproject2025.yyp",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

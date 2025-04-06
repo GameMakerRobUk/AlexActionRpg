@@ -221,14 +221,14 @@ choosing_option = false; //If set to true, then we just pressed on an option we 
 
 //confirmReset = false;
 
-//enum e_keys{l, r, u, d, jump, run, full_screen, windowed, att_low, att_mid, att_high, 
+//enum e_keys{l, r, u, d, ACTION, run, full_screen, windowed, att_low, att_mid, att_high, 
 //	        throw_low, throw_mid, throw_high, block_low, block_mid, block_high, pause_menu, use, reset, last}
 			
 //key_text[e_keys.l] = "LEFT";
 //key_text[e_keys.r] = "RIGHT";
 //key_text[e_keys.u] = "UP";
 //key_text[e_keys.d] = "DOWN";
-//key_text[e_keys.jump] = "JUMP";
+//key_text[e_keys.action] = "ACTION";
 //key_text[e_keys.run] = "RUN";
 //key_text[e_keys.full_screen] = "FULL SCREEN";
 //key_text[e_keys.windowed] = "WINDOWED";
