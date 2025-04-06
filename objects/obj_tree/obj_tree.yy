@@ -2,7 +2,9 @@
   "$GMObject":"",
   "%Name":"obj_tree",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_tree",
@@ -12,8 +14,8 @@
     "path":"folders/Objects/Destructible Objects.yy",
   },
   "parentObjectId":{
-    "name":"parDestructible",
-    "path":"objects/parDestructible/parDestructible.yy",
+    "name":"obj_parDestructible",
+    "path":"objects/obj_parDestructible/obj_parDestructible.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tree",
-    "path":"sprites/spr_tree/spr_tree.yy",
+    "name":"spr_treeStumpCollision",
+    "path":"sprites/spr_treeStumpCollision/spr_treeStumpCollision.yy",
   },
   "spriteMaskId":null,
   "visible":true,

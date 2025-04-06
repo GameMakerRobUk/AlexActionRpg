@@ -10,8 +10,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"parDestructible",
-    "path":"objects/parDestructible/parDestructible.yy",
+    "name":"obj_parDestructible",
+    "path":"objects/obj_parDestructible/obj_parDestructible.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fallen_tree",
-    "path":"sprites/spr_fallen_tree/spr_fallen_tree.yy",
+    "name":"spr_treeStumpCollision",
+    "path":"sprites/spr_treeStumpCollision/spr_treeStumpCollision.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,7 +1,18 @@
-#macro WALK_SPEED 1
-#macro RUN_SPEED 2
+#macro WALK_SPEED 2
+#macro RUN_SPEED 4
 
 move_speed = WALK_SPEED;
+
+_playerSleeping = true;
+
+spr_playerWalkRight = spr_male1_baseWalkRight;
+spr_playerWalkDown = spr_male1_baseWalkDown;
+spr_playerWalkLeft = spr_male1_baseWalkLeft;
+spr_playerWalkUp = spr_male1_baseWalkUp;
+spr_playerIdleRight = spr_male1_baseIdleRight;
+spr_playerIdleDown = spr_male1_baseIdleDown;
+spr_playerIdleLeft = spr_male1_baseIdleLeft;
+spr_playerIdleUp = spr_male1_baseIdleUp;
 
 tilemap = layer_tilemap_get_id("Tiles_col");
 

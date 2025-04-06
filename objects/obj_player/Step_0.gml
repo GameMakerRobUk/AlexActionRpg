@@ -5,8 +5,8 @@ down = keyboard_check( global.keys[e_keys.d][0] )|| keyboard_check( global.keys[
 //left_pressed = keyboard_check_pressed( global.keys[e_keys.l][0] ) || keyboard_check_pressed( global.keys[e_keys.l][1] );
 //right_pressed = keyboard_check_pressed( global.keys[e_keys.r][0] )|| keyboard_check_pressed( global.keys[e_keys.r][1] );
 
-var _hor = right - left;
-var _ver = down - up;
+var _horizontal = right - left;
+var _vertical = down - up;
 
 if (keyboard_check( global.keys[e_keys.run][0]) && stamina.current > 0){
 	move_speed = RUN_SPEED;	
@@ -15,23 +15,23 @@ if (keyboard_check( global.keys[e_keys.run][0]) && stamina.current > 0){
 	move_speed = WALK_SPEED;
 }
 
-move_and_collide(_hor * move_speed, _ver * move_speed, [tilemap, parCollision], undefined, undefined, undefined, move_speed, move_speed);
+move_and_collide(_horizontal * move_speed, _vertical * move_speed, [tilemap, parCollision], undefined, undefined, undefined, move_speed, move_speed);
 
-if (_hor != 0 or _ver != 0) 
+if (_horizontal != 0 or _vertical != 0) 
 {
-    if (_ver > 0) sprite_index = spr_player_walk_down;
-    else if (_ver < 0) sprite_index = spr_player_walk_up;
-    else if (_hor > 0) sprite_index = spr_player_walk_right;
-    else if (_hor < 0) sprite_index = spr_player_walk_left;
+    if (_vertical > 0) sprite_index = spr_playerWalkDown;
+    else if (_vertical < 0) sprite_index = spr_playerWalkUp;
+    else if (_horizontal > 0) sprite_index = spr_playerWalkRight;
+    else if (_horizontal < 0) sprite_index = spr_playerWalkLeft;
         
-    facing = point_direction(0, 0, _hor, _ver);// show_debug_message("facing: " + string(facing))
+    facing = point_direction(0, 0, _horizontal, _vertical);// show_debug_message("facing: " + string(facing))
 }
 else 
 { 
-    if (sprite_index == spr_player_walk_right) sprite_index = spr_player_idle_right;
-    else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_idle_left;
-    else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up;    
-    else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
+    if (sprite_index == spr_playerWalkRight) sprite_index = spr_playerIdleRight;
+    else if (sprite_index == spr_playerWalkLeft) sprite_index = spr_playerIdleLeft;
+    else if (sprite_index == spr_playerWalkUp) sprite_index = spr_playerIdleUp;    
+    else if (sprite_index == spr_playerWalkDown) sprite_index = spr_playerIdleDown;
 }
 
 if (keyboard_check_pressed( global.keys[e_keys.jump][0] )) 

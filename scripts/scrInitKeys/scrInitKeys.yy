@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scrInitKeys",
   "isCompatibility":false,
   "isDnD":false,
