@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_plantGrowth",
   "isCompatibility":false,
   "isDnD":false,

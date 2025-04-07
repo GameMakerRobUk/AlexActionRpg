@@ -8,11 +8,11 @@ if (alarm[1] < 0)
         hp -= (other.damage - _damageReduction);  
         image_blend = c_red; 
     }    
-    else if (_currentSprite == spr_treeStump && obj_player.toolEquipped == 3) {
+    else if (_currentSprite == (spr_treeStump || spr_treeStump2) && obj_player.toolEquipped == 3) {
         stumpHp -= other.damage;
         image_blend = c_red;
     }  
-    else if (_currentSprite == spr_treeStump) {
+    else if (_currentSprite == (spr_treeStump || spr_treeStump2)) {
         stumpHp -= (other.damage - _damageReduction);
         image_blend = c_red;
     }//-------------------------------------------------------------------------------------------------------

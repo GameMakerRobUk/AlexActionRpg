@@ -1,7 +1,12 @@
 event_inherited();
 
 i_died = function(){
-    _currentSprite = spr_treeStump;
+    if (_currentSprite = spr_tree) {
+        _currentSprite = spr_treeStump;   
+    }
+    else if (_currentSprite = spr_tree2) {
+        _currentSprite = spr_treeStump2;  
+    }
 }
 
 treeType = random_range(0, 2);

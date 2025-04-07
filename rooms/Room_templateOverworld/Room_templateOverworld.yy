@@ -1,5 +1,5 @@
 {
-  "$GMRoom":"",
+  "$GMRoom":"v1",
   "%Name":"Room_templateOverworld",
   "creationCodeFile":"",
   "inheritCode":false,

@@ -45,7 +45,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"actionRPGproject2025",
   "resources":[
@@ -124,6 +124,7 @@
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},},
     {"id":{"name":"spr_tree2","path":"sprites/spr_tree2/spr_tree2.yy",},},
     {"id":{"name":"spr_treeStump","path":"sprites/spr_treeStump/spr_treeStump.yy",},},
+    {"id":{"name":"spr_treeStump2","path":"sprites/spr_treeStump2/spr_treeStump2.yy",},},
     {"id":{"name":"spr_treeStumpCollision","path":"sprites/spr_treeStumpCollision/spr_treeStumpCollision.yy",},},
     {"id":{"name":"spr_water","path":"sprites/spr_water/spr_water.yy",},},
     {"id":{"name":"spr_wildFlowers1","path":"sprites/spr_wildFlowers1/spr_wildFlowers1.yy",},},

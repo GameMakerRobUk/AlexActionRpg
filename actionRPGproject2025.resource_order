@@ -86,6 +86,7 @@
     {"name":"spr_tilledEarth","order":30,"path":"sprites/spr_tilledEarth/spr_tilledEarth.yy",},
     {"name":"spr_tree2","order":6,"path":"sprites/spr_tree2/spr_tree2.yy",},
     {"name":"spr_treeStump","order":2,"path":"sprites/spr_treeStump/spr_treeStump.yy",},
+    {"name":"spr_treeStump2","order":7,"path":"sprites/spr_treeStump2/spr_treeStump2.yy",},
     {"name":"spr_treeStumpCollision","order":3,"path":"sprites/spr_treeStumpCollision/spr_treeStumpCollision.yy",},
     {"name":"spr_water","order":22,"path":"sprites/spr_water/spr_water.yy",},
     {"name":"spr_wildFlowers1","order":1,"path":"sprites/spr_wildFlowers1/spr_wildFlowers1.yy",},

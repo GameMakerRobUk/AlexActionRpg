@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_stamina",
   "isCompatibility":false,
   "isDnD":false,
