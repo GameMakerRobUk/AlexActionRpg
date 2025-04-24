@@ -10,6 +10,12 @@ function treeGrowth(){
         if (_currentSprite = spr_tree3 && _timeSinceLastGrew >= _minGrowthTime) {
         _minGrowthTimeMet = true
     }
+        if (_currentSprite = spr_tree4 && _timeSinceLastGrew >= _minGrowthTime) {
+        _minGrowthTimeMet = true
+    }
+    if (_currentSprite = spr_hazleTree && _timeSinceLastGrew >= _minGrowthTime) {
+        _minGrowthTimeMet = true
+    }
     
     if (_minGrowthTimeMet == true) {
         _growthTime += 1;
