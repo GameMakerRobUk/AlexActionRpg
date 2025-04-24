@@ -1,1 +1,0 @@
-_growthStage = 2;
