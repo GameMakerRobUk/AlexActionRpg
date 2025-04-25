@@ -3,7 +3,7 @@ event_inherited();
 
 _currentSprite = sprite_index;
 
-image_index = irandom(4);
+image_index = irandom(3);
 hp = 20;
 _damageReduction = 4;
 

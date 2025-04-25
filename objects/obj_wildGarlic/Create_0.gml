@@ -4,7 +4,7 @@ event_inherited();
 i_died = function(){
     instance_destroy();
 }
-_currentSprite = spr_cabbage;
+_currentSprite = spr_wildGarlic;
 _growthStage = 0;
 _maxGrowthStage = 4;
 _canGrow = false;

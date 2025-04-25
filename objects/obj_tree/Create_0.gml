@@ -17,24 +17,24 @@ i_died = function(){
     }
 }
 
-treeType = irandom( 4);
+treeType = irandom( 3);
 
-if (treeType <= 1) {
+if (treeType == 0) {
     _currentSprite = spr_tree;
 }
-else if (treeType <= 2) {
+else if (treeType == 1) {
     _currentSprite = spr_tree2;
 }
-else if (treeType <= 3) {
+else if (treeType == 2) {
     _currentSprite = spr_tree3;
 }   
-else if (treeType <= 4) {
+else if (treeType == 3) {
     _currentSprite = spr_tree4;
 }  
 
 
 
-_growthStage = irandom( 3);
+_growthStage = irandom(2);
 image_index = _growthStage;
 _maxGrowthStage = 2;
 _canGrow = false;
