@@ -134,6 +134,7 @@
     {"id":{"name":"spr_fist","path":"sprites/spr_fist/spr_fist.yy",},},
     {"id":{"name":"spr_hazleTree","path":"sprites/spr_hazleTree/spr_hazleTree.yy",},},
     {"id":{"name":"spr_hazleTreeStump","path":"sprites/spr_hazleTreeStump/spr_hazleTreeStump.yy",},},
+    {"id":{"name":"spr_hazleTreeWithNuts","path":"sprites/spr_hazleTreeWithNuts/spr_hazleTreeWithNuts.yy",},},
     {"id":{"name":"spr_helmet1Down","path":"sprites/spr_helmet1Down/spr_helmet1Down.yy",},},
     {"id":{"name":"spr_helmet1DownIdle","path":"sprites/spr_helmet1DownIdle/spr_helmet1DownIdle.yy",},},
     {"id":{"name":"spr_helmet1Left","path":"sprites/spr_helmet1Left/spr_helmet1Left.yy",},},

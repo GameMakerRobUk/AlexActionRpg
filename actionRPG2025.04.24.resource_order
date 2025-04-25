@@ -97,6 +97,7 @@
     {"name":"spr_fist","order":5,"path":"sprites/spr_fist/spr_fist.yy",},
     {"name":"spr_hazleTree","order":21,"path":"sprites/spr_hazleTree/spr_hazleTree.yy",},
     {"name":"spr_hazleTreeStump","order":22,"path":"sprites/spr_hazleTreeStump/spr_hazleTreeStump.yy",},
+    {"name":"spr_hazleTreeWithNuts","order":23,"path":"sprites/spr_hazleTreeWithNuts/spr_hazleTreeWithNuts.yy",},
     {"name":"spr_helmet1Down","order":2,"path":"sprites/spr_helmet1Down/spr_helmet1Down.yy",},
     {"name":"spr_helmet1DownIdle","order":8,"path":"sprites/spr_helmet1DownIdle/spr_helmet1DownIdle.yy",},
     {"name":"spr_helmet1Left","order":3,"path":"sprites/spr_helmet1Left/spr_helmet1Left.yy",},

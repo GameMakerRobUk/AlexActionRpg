@@ -16,8 +16,8 @@
     "path":"folders/Objects/Destructible Objects/plants/fruitTrees.yy",
   },
   "parentObjectId":{
-    "name":"obj_parDestructible",
-    "path":"objects/obj_parDestructible/obj_parDestructible.yy",
+    "name":"obj_parFruitTree",
+    "path":"objects/obj_parFruitTree/obj_parFruitTree.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
