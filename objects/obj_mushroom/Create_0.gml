@@ -4,7 +4,7 @@ i_died = function(){
     instance_destroy();
 }
 
-frame = random_range(0, 4);
+frame = irandom( 4);
 if (frame < 1) {
     image_index = 0;
 }

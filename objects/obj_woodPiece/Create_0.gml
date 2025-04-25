@@ -6,7 +6,7 @@ i_died = function(){
 }
 
 //Set random branch size sprite
-frame = random_range(0, 3);
+frame = irandom( 3);
 if (frame < 1) {
     image_index = 0;
 }

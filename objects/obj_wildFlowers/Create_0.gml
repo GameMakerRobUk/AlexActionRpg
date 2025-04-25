@@ -4,7 +4,7 @@ i_died = function(){
     instance_destroy();
     
 }
-_sprite = random_range(0, 3);
+_sprite = irandom( 3);
 if (_sprite < 1) {
     sprite_index = spr_wildFlowers1;
 }
@@ -15,5 +15,5 @@ else if (_sprite <= 3){
     sprite_index = spr_wildFlowers3;
 }
 
-image_index += random_range(0, 3);
+image_index += irandom( 3);
 

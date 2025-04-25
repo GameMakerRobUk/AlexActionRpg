@@ -8,14 +8,14 @@ i_died = function(){
     }
 }
 
-_growthStage = random_range(0, 3);
+_growthStage = irandom(2);
 image_index = _growthStage;
 _maxGrowthStage = 2;
 _canGrow = false;
 _timeSinceLastGrew = 0;
 _minGrowthTime = 10000;
 _minGrowthTimeMet = false;
-_totalGrowthTime = _minGrowthTime + random_range(0, 10000);
+_totalGrowthTime = _minGrowthTime + irandom( 10000);
 _growthTime = 0;
 _damageReduction = image_index+2;
 hp = sqr(sqr(image_index+1));
