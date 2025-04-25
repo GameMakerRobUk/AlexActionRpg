@@ -2,7 +2,7 @@ function scr_collisionWithObjAttack(){
     if (alarm[1] < 0) {
     
         //hitting tree with felling axe
-        if (_currentSprite == spr_tree && obj_player.usingTool == true && obj_player.toolEquipped == 2) {
+        if (_currentSprite == spr_tree && obj_player.usingTool == true && obj_player.toolEquipped == 1) {
             hp -= max(0, other.damage);
             
             if ((other.damage - _damageReduction) > 0) {
@@ -11,7 +11,7 @@ function scr_collisionWithObjAttack(){
         }
          
         //hitting tree2 with felling axe         
-        else if (_currentSprite == spr_tree2 && obj_player.usingTool == true && obj_player.toolEquipped == 2) { 
+        else if (_currentSprite == spr_tree2 && obj_player.usingTool == true && obj_player.toolEquipped == 1) { 
             hp -= max(0, other.damage);  
             
             if ((other.damage - _damageReduction) > 0) {
@@ -20,7 +20,7 @@ function scr_collisionWithObjAttack(){
         }
         
         //hitting tree3 with felling axe         
-        else if (_currentSprite == spr_tree3 && obj_player.usingTool == true && obj_player.toolEquipped == 2) { 
+        else if (_currentSprite == spr_tree3 && obj_player.usingTool == true && obj_player.toolEquipped == 1) { 
             hp -= max(0, other.damage);  
             
             if ((other.damage - _damageReduction) > 0) {
@@ -29,7 +29,7 @@ function scr_collisionWithObjAttack(){
         }
         
         //hitting tree4 with felling axe         
-        else if (_currentSprite == spr_tree4 && obj_player.usingTool == true && obj_player.toolEquipped == 2) { 
+        else if (_currentSprite == spr_tree4 && obj_player.usingTool == true && obj_player.toolEquipped == 1) { 
             hp -= max(0, other.damage);  
             
             if ((other.damage - _damageReduction) > 0) {
@@ -38,7 +38,7 @@ function scr_collisionWithObjAttack(){
         }
         
         //hitting blackbarryBush with felling axe         
-        else if (_currentSprite == spr_blackberryBush && obj_player.usingTool == true && obj_player.toolEquipped == 2) { 
+        else if (_currentSprite == spr_blackberryBush && obj_player.usingTool == true && obj_player.toolEquipped == 1) { 
             hp -= max(0, other.damage);  
             
             if ((other.damage - _damageReduction) > 0) {
@@ -47,7 +47,7 @@ function scr_collisionWithObjAttack(){
         }
         
         //hitting hazle with felling axe         
-        else if (_currentSprite == spr_hazleTree && obj_player.usingTool == true && obj_player.toolEquipped == 2) { 
+        else if (_currentSprite == spr_hazleTree && obj_player.usingTool == true && obj_player.toolEquipped == 1) { 
             hp -= max(0, other.damage);  
             
             if ((other.damage - _damageReduction) > 0) {
@@ -56,7 +56,7 @@ function scr_collisionWithObjAttack(){
         }
         
         //hitting village gate with felling axe
-        else if (_currentSprite == spr_villageGate && obj_player.usingTool == true && obj_player.toolEquipped == 2) { 
+        else if (_currentSprite == spr_villageGate && obj_player.usingTool == true && obj_player.toolEquipped == 1) { 
             hp -= max(0, other.damage);  
             
             if ((other.damage - _damageReduction) > 0) {
@@ -66,7 +66,7 @@ function scr_collisionWithObjAttack(){
         }     
         
         //hitting stump with adze    
-        else if (_currentSprite == spr_treeStump && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
+        else if (_currentSprite == spr_treeStump && obj_player.usingTool == true && obj_player.toolEquipped == 2) {
             stumpHp -= max(0, other.damage);
             
             if ((other.damage - _damageReduction) > 0) {
@@ -75,7 +75,7 @@ function scr_collisionWithObjAttack(){
         }  
     
         //hitting stump2 with adze    
-        else if (_currentSprite == spr_treeStump2 && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
+        else if (_currentSprite == spr_treeStump2 && obj_player.usingTool == true && obj_player.toolEquipped == 2) {
             stumpHp -= max(0, other.damage);
             
             if ((other.damage - _damageReduction) > 0) {
@@ -84,7 +84,7 @@ function scr_collisionWithObjAttack(){
         }
         
         //hitting stump3 with adze    
-        else if (_currentSprite == spr_treeStump3 && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
+        else if (_currentSprite == spr_treeStump3 && obj_player.usingTool == true && obj_player.toolEquipped == 2) {
             stumpHp -= max(0, other.damage);
             
             if ((other.damage - _damageReduction) > 0) {
@@ -93,7 +93,7 @@ function scr_collisionWithObjAttack(){
         }
         
         //hitting stump4 with adze    
-        else if (_currentSprite == spr_treeStump4 && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
+        else if (_currentSprite == spr_treeStump4 && obj_player.usingTool == true && obj_player.toolEquipped == 2) {
             stumpHp -= max(0, other.damage);
             
             if ((other.damage - _damageReduction) > 0) {
@@ -102,7 +102,7 @@ function scr_collisionWithObjAttack(){
         }
         
         //hitting hazleTreeStump with adze    
-        else if (_currentSprite == spr_hazleTreeStump && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
+        else if (_currentSprite == spr_hazleTreeStump && obj_player.usingTool == true && obj_player.toolEquipped == 2) {
             stumpHp -= max(0, other.damage);
             
             if ((other.damage - _damageReduction) > 0) {
@@ -111,7 +111,7 @@ function scr_collisionWithObjAttack(){
         }
         
         //hitting bushStump with adze    
-        else if (_currentSprite == spr_bushStump && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
+        else if (_currentSprite == spr_bushStump && obj_player.usingTool == true && obj_player.toolEquipped == 2) {
             stumpHp -= max(0, other.damage);
             
             if ((other.damage - _damageReduction) > 0) {
@@ -119,7 +119,7 @@ function scr_collisionWithObjAttack(){
             } 
         }
     
-        else if (_currentSprite == spr_stone && obj_player.usingTool == true && obj_player.toolEquipped == 6) {  
+        else if (_currentSprite == spr_stone && obj_player.usingTool == true && obj_player.toolEquipped == 5) {  
             hp -= max(0, other.damage); 
             
             if ((other.damage - _damageReduction) > 0) {
