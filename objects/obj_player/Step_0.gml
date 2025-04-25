@@ -288,7 +288,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                     
                 //look for a harvestable plant or item and get its ID if there is one
 				objectToPickUp = noone;
-                objectToPickUp = collision_rectangle(x - 16, y - 16, x + 15, y + 15,  [obj_parPlantedPlant, obj_parItems, obj_blackberryBush], false, false);
+                objectToPickUp = collision_rectangle(x - 16, y - 16, x + 15, y + 15,  [obj_parPlantedPlant, obj_parItems, obj_parFruitTree], false, false);
                 show_debug_message("object to pick up or harvest = " + string(objectToPickUp));
                    
                 //if there was something there
@@ -300,7 +300,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                     objectType = objectToPickUp.object_index;
                     show_debug_message("kind of object = " + string(objectType));
                         
-                    #region -----------object is a harvestable plant--------------
+                    #region -----------object is a harvestable plant------------------------------------------------
                     
                     objectsParent = object_get_parent(objectType);
                     if (objectsParent == obj_parPlantedPlant) { 
@@ -364,7 +364,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                     
                     #endregion object is a harvestable plant
                     
-                    #region -----------------object is an item-----------------------
+                    #region -----------------object is an item-------------------------------------------------------
                     
                     else if (objectsParent == obj_parItems){
                         show_debug_message("object is an item");
@@ -438,7 +438,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                     
                     #endregion object is an item
                     
-                    #region object is a fruit tree
+                    #region -------------object is a fruit tree------------------------------------------------------
                     
                         else if (objectsParent == obj_parFruitTree) {
                         	switch (objectType) {
@@ -447,6 +447,13 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                                         handfulOfBlackberriesOwned += 1;
                                         show_debug_message("handfulOfBlackberries acquired. Owned = " + string(handfulOfBlackberriesOwned));
                                         objectToPickUp._frame = 0;
+                                    }
+                                break;
+                                case obj_hazleTree :
+                                    if (objectToPickUp.sprite_index == spr_hazleTreeWithNuts) {
+                                        handfulOfHazlenutsOwned += 1;
+                                        show_debug_message("handfulOfHazlenuts acquired. Owned = " + string(handfulOfHazlenutsOwned));
+                                        objectToPickUp.sprite_index = spr_hazleTree;
                                     }
                                 break;
                             }

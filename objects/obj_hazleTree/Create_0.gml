@@ -1,9 +1,9 @@
 event_inherited();
 
-_currentSprite = spr_hazleTree;
+_currentSprite = spr_hazleTreeWithNuts;
 
 i_died = function(){
-    if (_currentSprite == spr_hazleTree) {
+    if (_currentSprite == spr_hazleTreeWithNuts || _currentSprite == spr_hazleTree) {
         _currentSprite = spr_hazleTreeStump;   
     }
 }
