@@ -450,10 +450,18 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                                     }
                                 break;
                                 case obj_hazleTree :
-                                    if (objectToPickUp.sprite_index == spr_hazleTreeWithNuts) {
-                                        handfulOfHazlenutsOwned += 1;
-                                        show_debug_message("handfulOfHazlenuts acquired. Owned = " + string(handfulOfHazlenutsOwned));
-                                        objectToPickUp.sprite_index = spr_hazleTree;
+                                    if (objectToPickUp._currentSprite == spr_hazleTreeWithNuts) {
+                                        if (objectToPickUp.image_index == 1) {
+                                        	handfulOfHazlenutsOwned += 1;
+                                            show_debug_message("handfulOfHazlenuts acquired. Owned = " + string(handfulOfHazlenutsOwned));
+                                            objectToPickUp._currentSprite = spr_hazleTree;
+                                        }
+                                        else if (objectToPickUp.image_index == 2) {
+                                        	handfulOfHazlenutsOwned += 3;
+                                            show_debug_message("handfulOfHazlenuts acquired. Owned = " + string(handfulOfHazlenutsOwned));
+                                            objectToPickUp._currentSprite = spr_hazleTree;
+                                        }
+                                        
                                     }
                                 break;
                             }
