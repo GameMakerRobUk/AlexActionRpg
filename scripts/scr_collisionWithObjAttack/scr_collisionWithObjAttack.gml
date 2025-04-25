@@ -28,8 +28,26 @@ function scr_collisionWithObjAttack(){
             } 
         }
         
+        //hitting tree4 with felling axe         
+        else if (_currentSprite == spr_tree4 && obj_player.usingTool == true && obj_player.toolEquipped == 2) { 
+            hp -= max(0, other.damage);  
+            
+            if ((other.damage - _damageReduction) > 0) {
+            	image_blend = c_red;
+            } 
+        }
+        
         //hitting blackbarryBush with felling axe         
         else if (_currentSprite == spr_blackberryBush && obj_player.usingTool == true && obj_player.toolEquipped == 2) { 
+            hp -= max(0, other.damage);  
+            
+            if ((other.damage - _damageReduction) > 0) {
+            	image_blend = c_red;
+            } 
+        }
+        
+        //hitting hazle with felling axe         
+        else if (_currentSprite == spr_hazleTree && obj_player.usingTool == true && obj_player.toolEquipped == 2) { 
             hp -= max(0, other.damage);  
             
             if ((other.damage - _damageReduction) > 0) {
@@ -58,6 +76,33 @@ function scr_collisionWithObjAttack(){
     
         //hitting stump2 with adze    
         else if (_currentSprite == spr_treeStump2 && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
+            stumpHp -= max(0, other.damage);
+            
+            if ((other.damage - _damageReduction) > 0) {
+            	image_blend = c_red;
+            } 
+        }
+        
+        //hitting stump3 with adze    
+        else if (_currentSprite == spr_treeStump3 && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
+            stumpHp -= max(0, other.damage);
+            
+            if ((other.damage - _damageReduction) > 0) {
+            	image_blend = c_red;
+            } 
+        }
+        
+        //hitting stump4 with adze    
+        else if (_currentSprite == spr_treeStump4 && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
+            stumpHp -= max(0, other.damage);
+            
+            if ((other.damage - _damageReduction) > 0) {
+            	image_blend = c_red;
+            } 
+        }
+        
+        //hitting hazleTreeStump with adze    
+        else if (_currentSprite == spr_hazleTreeStump && obj_player.usingTool == true && obj_player.toolEquipped == 3) {
             stumpHp -= max(0, other.damage);
             
             if ((other.damage - _damageReduction) > 0) {
