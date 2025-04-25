@@ -147,16 +147,16 @@ debug = false;
             sword,
             battleAxe,
             greatAxe,
-        }
+        };
 
         enum tools {
-            emptyHand,
-            fellingAxe,
-            adze,
-            hoe,
-            seedBag,
-            sledgehammer,
-        }
+            emptyHand = 0,
+            fellingAxe = 1,
+            adze = 2,
+            hoe = 3,
+            seedBag = 4,
+            sledgehammer = 5,
+        };
     
     #endregion items
 
