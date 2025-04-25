@@ -1,6 +1,13 @@
 event_inherited();
 
-_currentSprite = spr_hazleTreeWithNuts;
+hasFruits = irandom(1);
+
+if (hasFruits ==1) {
+	_currentSprite = spr_hazleTreeWithNuts;
+}
+else {
+	_currentSprite = spr_hazleTree;
+}
 
 i_died = function(){
     if (_currentSprite == spr_hazleTreeWithNuts || _currentSprite == spr_hazleTree) {
