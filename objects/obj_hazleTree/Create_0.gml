@@ -2,7 +2,7 @@ event_inherited();
 
 hasFruits = irandom(1);
 
-if (hasFruits ==1) {
+if (hasFruits ==1 ) {
 	_currentSprite = spr_hazleTreeWithNuts;
 }
 else {
@@ -14,6 +14,12 @@ i_died = function(){
         _currentSprite = spr_hazleTreeStump;   
     }
 }
+
+fruitSeason = "fall";
+fruitGrowthTime = 500;
+fruitTimer = 0;
+spriteWithNuts = spr_hazleTreeWithNuts;
+spriteWithoutNuts = spr_hazleTree;
 
 _growthStage = irandom(2);
 image_index = _growthStage;

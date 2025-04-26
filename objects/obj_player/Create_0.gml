@@ -5,6 +5,7 @@
 #macro WALK_SPEED 2
 #macro RUN_SPEED 4
 
+global.season = "fall";
 fullScreen = false;
 hp = 10;
 hp_total = hp;
