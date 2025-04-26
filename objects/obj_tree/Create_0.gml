@@ -34,6 +34,7 @@ else if (treeType == 3) {
 
 
 
+
 _growthStage = irandom(2);
 image_index = _growthStage;
 _maxGrowthStage = 2;

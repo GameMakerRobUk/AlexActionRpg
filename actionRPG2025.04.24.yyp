@@ -22,6 +22,7 @@
     {"$GMFolder":"","%Name":"mineral","folderPath":"folders/Objects/Destructible Objects/mineral.yy","name":"mineral","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"plants","folderPath":"folders/Objects/Destructible Objects/plants.yy","name":"plants","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"crops","folderPath":"folders/Objects/Destructible Objects/plants/crops.yy","name":"crops","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"decorative","folderPath":"folders/Objects/Destructible Objects/plants/decorative.yy","name":"decorative","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"fruitTrees","folderPath":"folders/Objects/Destructible Objects/plants/fruitTrees.yy","name":"fruitTrees","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"gathering","folderPath":"folders/Objects/Destructible Objects/plants/gathering.yy","name":"gathering","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"meta objects","folderPath":"folders/Objects/meta objects.yy","name":"meta objects","resourceType":"GMFolder","resourceVersion":"2.0",},

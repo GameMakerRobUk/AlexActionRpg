@@ -15,13 +15,14 @@ i_died = function(){
     }
 }
 
+
 fruitSeason = "fall";
 fruitGrowthTime = 500;
 fruitTimer = 0;
 spriteWithNuts = spr_hazleTreeWithNuts;
 spriteWithoutNuts = spr_hazleTree;
 
-_growthStage = irandom(2);
+_growthStage = irandom(image_number);
 image_index = _growthStage;
 _maxGrowthStage = 2;
 _canGrow = false;
@@ -33,4 +34,3 @@ _growthTime = 0;
 _damageReduction = image_index+2;
 hp = sqr(sqr(image_index+1));
 stumpHp = sqr(sqr(image_index+1));
- 
