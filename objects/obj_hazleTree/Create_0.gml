@@ -8,7 +8,7 @@ i_died = function(){
     }
 }
 
-_growthStage = random_range(0, 3);
+_growthStage = irandom(image_number);
 image_index = _growthStage;
 _maxGrowthStage = 2;
 _canGrow = false;

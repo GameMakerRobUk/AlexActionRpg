@@ -34,7 +34,7 @@ else if (treeType <= 4) {
 
 
 
-_growthStage = random_range(0, 3);
+_growthStage = random_range(0, image_number);
 image_index = _growthStage;
 _maxGrowthStage = 2;
 _canGrow = false;
