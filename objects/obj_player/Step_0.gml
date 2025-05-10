@@ -282,7 +282,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
         
             show_debug_message("usingTool: " + string(usingTool));
             show_debug_message("toolEquipped: " + string(toolEquipped));       
-            if (usingTool == true /*&& toolEquipped == 1*/) {
+            if (usingTool == true && toolEquipped == tools.emptyHand) {
             
             #region -----------------------empty hand equipped-------------------------------------------------------------- 
                     
@@ -342,7 +342,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                         //if so, destroy the instance    
                         else {
                             show_debug_message("plant ready to harvest");
-                            objectToPickUp.hp = 0; //------------------------------------------------------not working
+                            objectToPickUp.hp = 0;
                                 
                             //and add one of the right type of plant to inventory
                             switch (objectType) {
@@ -411,7 +411,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                                   
                             break; 
                             case obj_stone : 
-                                switch (objectToPickUp.image_index) { //---------------------------------not working
+                                switch (objectToPickUp.image_index) {
                                 	case 0 :
                                         pebbleOwned += 1;
                                         show_debug_message("pebble acquired. Owned = " + string(pebbleOwned)); 
@@ -450,10 +450,18 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                                     }
                                 break;
                                 case obj_hazleTree :
-                                    if (objectToPickUp.sprite_index == spr_hazleTreeWithNuts) {
-                                        handfulOfHazlenutsOwned += 1;
-                                        show_debug_message("handfulOfHazlenuts acquired. Owned = " + string(handfulOfHazlenutsOwned));
-                                        objectToPickUp.sprite_index = spr_hazleTree;
+                                    if (objectToPickUp._currentSprite == spr_hazleTreeWithNuts) {
+                                        if (objectToPickUp.image_index == 1) {
+                                        	handfulOfHazlenutsOwned += 1;
+                                            show_debug_message("handfulOfHazlenuts acquired. Owned = " + string(handfulOfHazlenutsOwned));
+                                            objectToPickUp._currentSprite = spr_hazleTree;
+                                        }
+                                        else if (objectToPickUp.image_index == 2) {
+                                        	handfulOfHazlenutsOwned += 3;
+                                            show_debug_message("handfulOfHazlenuts acquired. Owned = " + string(handfulOfHazlenutsOwned));
+                                            objectToPickUp._currentSprite = spr_hazleTree;
+                                        }
+                                        
                                     }
                                 break;
                             }
@@ -471,7 +479,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
         
             #region -----------------------felling axe equipped--------------------------------------------
 		        show_debug_message("fellingAxeOwned = " + string(fellingAxeOwned));
-                if (usingTool == true && fellingAxeOwned == true && toolEquipped == 1){
+                if (usingTool == true && fellingAxeOwned == true && toolEquipped == tools.fellingAxe){
                     
                     var _coords = get_facing_coords();
                     var _inst = instance_create_depth(_coords.x, _coords.y, depth, obj_attack);
@@ -484,7 +492,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
         
             #region --------------------------adze equipped------------------------------------------------
         
-                if (usingTool == true && adzeOwned == true && toolEquipped == 2){
+                if (usingTool == true && adzeOwned == true && toolEquipped == tools.adze){
                     var _coords = get_facing_coords();
                     var _inst = instance_create_depth(_coords.x, _coords.y, depth, obj_attack);
                     _inst.image_angle = facing;
@@ -508,7 +516,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
                 
 
 				
-                if (usingTool == true && hoeOwned == true && toolEquipped == 3) {
+                if (usingTool == true && hoeOwned == true && toolEquipped == tools.hoe) {
                     //create the tilling function in a variable in case we want to do something based on if the space is tillable or not later on
                        
                     // If the tile is already tilled or is a plantedPlant...-----------------------------------------------------------------------------------
@@ -552,7 +560,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
         
             #region -------------------------seedbag equipped-----------------------------------------------
 		
-                if (usingTool == true && seedBagOwned == true && toolEquipped == 4) {
+                if (usingTool == true && seedBagOwned == true && toolEquipped == tools.seedBag) {
                     
                     //if there is a tilledEarth to plant in
                     
@@ -602,7 +610,7 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
         
             #region -----------------------sledgehammer equipped--------------------------------------------
         
-                if (usingTool == true && sledgehammerOwned == true && toolEquipped == 5){
+                if (usingTool == true && sledgehammerOwned == true && toolEquipped == tools.sledgehammer){
                     var _coords = get_facing_coords();
                     var _inst = instance_create_depth(_coords.x, _coords.y, depth, obj_attack);
                     _inst.image_angle = facing;
@@ -618,8 +626,6 @@ if (keyboard_check_pressed( global.keys[e_keys.action][0]) || keyboard_check_pre
         
     } //end if we have enough stamina and we can swing again
 }
-
-#endregion use equiped tool or weapon - if action key pressed
 
 #endregion use equiped tool or weapon when action key pressed
 

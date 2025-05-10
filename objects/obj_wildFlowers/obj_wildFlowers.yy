@@ -9,8 +9,8 @@
   "name":"obj_wildFlowers",
   "overriddenProperties":[],
   "parent":{
-    "name":"plants",
-    "path":"folders/Objects/Destructible Objects/plants.yy",
+    "name":"decorative",
+    "path":"folders/Objects/Destructible Objects/plants/decorative.yy",
   },
   "parentObjectId":{
     "name":"obj_parDestructibleNoCollision",

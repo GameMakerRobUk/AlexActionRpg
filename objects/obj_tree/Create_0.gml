@@ -17,31 +17,32 @@ i_died = function(){
     }
 }
 
-treeType = random_range(0, 4);
+treeType = irandom( 3);
 
-if (treeType <= 1) {
+if (treeType == 0) {
     _currentSprite = spr_tree;
 }
-else if (treeType <= 2) {
+else if (treeType == 1) {
     _currentSprite = spr_tree2;
 }
-else if (treeType <= 3) {
+else if (treeType == 2) {
     _currentSprite = spr_tree3;
 }   
-else if (treeType <= 4) {
+else if (treeType == 3) {
     _currentSprite = spr_tree4;
 }  
 
 
 
-_growthStage = random_range(0, 3);
+
+_growthStage = irandom(2);
 image_index = _growthStage;
 _maxGrowthStage = 2;
 _canGrow = false;
 _timeSinceLastGrew = 0;
 _minGrowthTime = 10000;
 _minGrowthTimeMet = false;
-_totalGrowthTime = _minGrowthTime + random_range(0, 10000);
+_totalGrowthTime = _minGrowthTime + irandom( 10000);
 _growthTime = 0;
 _damageReduction = image_index+2;
 hp = sqr(sqr(image_index+1));
